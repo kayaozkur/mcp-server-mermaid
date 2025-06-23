@@ -1,6 +1,6 @@
-# @lepion/mcp-server-mermaid
+# @kayaozkur/mcp-server-mermaid
 
-[![npm version](https://img.shields.io/npm/v/@lepion/mcp-server-mermaid.svg)](https://www.npmjs.com/package/@lepion/mcp-server-mermaid)
+[![npm version](https://img.shields.io/npm/v/@kayaozkur/mcp-server-mermaid.svg)](https://www.npmjs.com/package/@kayaozkur/mcp-server-mermaid)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![MCP](https://img.shields.io/badge/MCP-Compatible-green.svg)](https://modelcontextprotocol.io)
 [![Node.js Version](https://img.shields.io/badge/node-%3E%3D18-brightgreen)](https://nodejs.org/)
@@ -31,10 +31,10 @@ A Model Context Protocol (MCP) server that provides comprehensive Mermaid diagra
 
 ```bash
 # Install from npm (recommended)
-npm install -g @lepion/mcp-server-mermaid
+npm install -g @kayaozkur/mcp-server-mermaid
 
 # Or clone the repository for development
-git clone https://github.com/lepion/mcp-server-mermaid.git
+git clone https://github.com/kayaozkur/mcp-server-mermaid.git
 cd mcp-server-mermaid
 
 # Install dependencies
@@ -73,7 +73,7 @@ Add the following to your Claude Desktop configuration file:
   "mcpServers": {
     "mermaid": {
       "command": "npx",
-      "args": ["@lepion/mcp-server-mermaid"],
+      "args": ["@kayaozkur/mcp-server-mermaid"],
       "env": {
         "LOG_LEVEL": "info"
       }
@@ -505,7 +505,7 @@ MIT License - see [LICENSE](LICENSE) file for details
 ## Support
 
 - 📧 Email: support@lepion.io
-- 🐛 Issues: [GitHub Issues](https://github.com/lepion/mcp-server-mermaid/issues)
+- 🐛 Issues: [GitHub Issues](https://github.com/kayaozkur/mcp-server-mermaid/issues)
 - 📖 Mermaid Docs: [mermaid.js.org](https://mermaid.js.org/)
 - 🤖 MCP Docs: [modelcontextprotocol.io](https://modelcontextprotocol.io)
 
