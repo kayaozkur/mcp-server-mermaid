@@ -1,0 +1,20 @@
+name: Main Workflow
+
+on:
+  push:
+    branches: [main, master, develop]
+    tags:
+      - 'v*'
+  pull_request:
+    branches: [main, master, develop]
+  workflow_dispatch:
+
+jobs:
+  ci-cd:
+    uses: ./.github/workflows/reusable-mcp-workflow.yml
+    with:
+      package-name: '@lepion/mcp-server-mermaid'
+      node-version: '18.x'
+      run-tests: true
+    secrets:
+      NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
