@@ -1,7 +1,7 @@
 {
   "name": "@lepion/mcp-server-mermaid",
   "version": "1.0.0",
-  "description": "MCP server for Mermaid visual intelligence and diagram generation",
+  "description": "Model Context Protocol server for AI-powered Mermaid diagram creation, analysis, and optimization",
   "type": "module",
   "main": "dist/index.js",
   "scripts": {
