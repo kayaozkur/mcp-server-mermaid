@@ -20,7 +20,6 @@ class MermaidServer {
             },
         });
         this.setupToolHandlers();
-        this.logger.info('MCP Mermaid Server initialized');
     }
     setupToolHandlers() {
         this.server.setRequestHandler(ListToolsRequestSchema, async () => {
@@ -239,7 +238,6 @@ class MermaidServer {
     async run() {
         const transport = new StdioServerTransport();
         await this.server.connect(transport);
-        this.logger.info('MCP Mermaid Server running on stdio');
     }
 }
 const server = new MermaidServer();
