@@ -163,7 +163,7 @@ jobs:
           path: dist/
 
       - name: Test MCP server startup
-        run: 
+        run: |
           exit_code=0
           timeout 10s node dist/index.js || exit_code=$?
           if [ "$exit_code" -eq 124 ]; then
