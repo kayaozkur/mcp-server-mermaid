@@ -298,7 +298,7 @@ class MermaidServer {
   async run(): Promise<void> {
     const transport = new StdioServerTransport();
     await this.server.connect(transport);
-    // Server started - no logging to avoid stdout pollution
+    this.logger.debug('Server started successfully.');
   }
 
         });
