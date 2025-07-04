@@ -1,5 +1,11 @@
 name: Main Workflow
-
+  run: |
+    if command -v brew &>/dev/null; then
+      brew install pkg-config cairo pango libpng jpeg giflib librsvg
+    elif command -v apt-get &>/dev/null; then
+      sudo apt-get update
+      sudo apt-get install -y build-essential libcairo2-dev libpango1.0-dev libjpeg-dev libgif-dev librsvg2-dev
+    fi
 on:
   push:
     branches: [main, master, develop]
