@@ -50,7 +50,7 @@ class MermaidServer {
     );
 
     this.setupToolHandlers();
-    this.logger.info('MCP Mermaid Server initialized');
+    // Server initialized - no logging to avoid stdout pollution
   }
 
   private setupToolHandlers(): void {
@@ -282,7 +282,7 @@ class MermaidServer {
   async run(): Promise<void> {
     const transport = new StdioServerTransport();
     await this.server.connect(transport);
-    this.logger.info('MCP Mermaid Server running on stdio');
+    // Server started - no logging to avoid stdout pollution
   }
 }
 
